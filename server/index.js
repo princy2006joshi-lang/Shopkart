@@ -6,7 +6,8 @@ import cors from 'cors'
 
 import customerRoutes from './routes/customer.routes.js'
 import productRoutes from './routes/product.routes.js'
-
+import cartRoutes from './routes/cart.routes.js'
+import wishlistRoutes from './routes/wishlist.routes.js'
 
 const app = express()
 const Port = 9001
@@ -28,6 +29,8 @@ app.use(cors({
 
 app.use('/customer', customerRoutes)
 app.use('/products', productRoutes)
+app.use('/cart', cartRoutes)
+app.use('/wishlist', wishlistRoutes)
 
 app.get('/', (req, res)=>{
     res.send("Server is running")
