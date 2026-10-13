@@ -21,7 +21,8 @@ export default defineConfig({
       },
       '/products': apiProxy,
       '/cart': apiProxy,
-      '/wishlist': apiProxy
+      '/wishlist': apiProxy,
+      '/orders': apiProxy
     }
   }
 })

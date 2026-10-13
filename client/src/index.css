@@ -234,6 +234,34 @@ input::placeholder { color: #aaa9b8; }
 .profile-form { max-width: 720px; padding: 28px; background: white; border: 1px solid var(--border); border-radius: 18px; box-shadow: 0 5px 18px rgba(31,28,64,.035); }
 .profile-form textarea { min-height: 105px; resize: vertical; }
 .profile-form .button-primary { max-width: 250px; }
+.checkout-page { max-width: 1180px; margin: 0 auto; padding: 42px 36px 80px; }
+.checkout-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) 360px; gap: 24px; align-items: start; }
+.checkout-form { max-width: none; }
+.checkout-form h2, .order-card h2 { margin: 0 0 18px; font-size: 1.4rem; }
+.checkout-form form { display: grid; gap: 18px; }
+.checkout-form label { display: grid; gap: 8px; color: var(--ink); font-weight: 700; font-size: .82rem; }
+.checkout-form input, .checkout-form textarea { width: 100%; padding: 13px 14px; border: 1px solid var(--border); border-radius: 12px; background: #fdfdff; color: var(--ink); }
+.checkout-payment-box { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 16px; background: var(--purple-soft); border: 1px solid #e4d9ff; border-radius: 12px; color: var(--ink); font-size: .88rem; }
+.checkout-payment-box strong { color: var(--purple); }
+.payment-method-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.payment-method-option { display: flex; align-items: center; justify-content: center; width: 100%; padding: 14px 12px; color: var(--ink); background: white; border: 1px solid var(--border); border-radius: 12px; font-weight: 700; }
+.payment-method-option.active { background: var(--purple-soft); border-color: #d9cdfd; color: var(--purple); }
+.checkout-item-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.checkout-item-row div { display: grid; gap: 5px; }
+.checkout-item-row strong { font-size: .92rem; }
+.checkout-item-row span { color: var(--muted); font-size: .75rem; }
+.checkout-items-list { display: grid; margin-top: 18px; }
+.order-card { display: grid; gap: 12px; }
+.order-card-header, .order-summary-row, .order-detail-block { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.order-card-header h2 { margin: 0; }
+.order-summary-row { margin-top: 6px; color: var(--muted); font-size: .82rem; }
+.order-summary-row strong { color: var(--purple); font-size: 1rem; }
+.order-card-actions { display: flex; justify-content: flex-end; }
+.order-card-actions .button { width: auto; margin-top: 0; }
+.order-status { display: inline-flex; align-items: center; justify-content: center; padding: 8px 12px; text-transform: capitalize; }
+.status-pill { background: var(--purple-soft); color: var(--purple); border-radius: 999px; font-size: .7rem; font-weight: 800; letter-spacing: .08em; }
+.order-detail-block { padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--muted); font-size: .82rem; }
+.order-detail-block strong { color: var(--ink); text-align: right; }
 
 @media (max-width: 900px) {
   .navbar { padding-right: 22px; padding-left: 22px; }

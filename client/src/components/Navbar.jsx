@@ -23,6 +23,7 @@ export default function Navbar() {
         <Link className="nav-link" to="/products">Catalog</Link>
         <WishlistNavLink />
         <CartNavLink />
+        <Link className="nav-link" to="/orders">Orders</Link>
         <Link className="nav-link" to="/profile">Profile</Link>
         <span className="nav-greeting">Hi, {customer?.fullName?.split(' ')[0]}</span>
         <button className="button button-quiet logout-button" onClick={handleLogout}>Log out <span aria-hidden="true">↗</span></button>

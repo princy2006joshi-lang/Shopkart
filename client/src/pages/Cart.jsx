@@ -138,8 +138,9 @@ export default function Cart() {
                 <span>Subtotal</span>
                 <strong>{formatPrice(subtotal)}</strong>
               </div>
-              <p className="cart-checkout-note">Checkout and payment are not part of this cart feature.</p>
-              <Link className="button button-primary" to="/products">Continue shopping <span aria-hidden="true">→</span></Link>
+              <p className="cart-checkout-note">Your items are reserved for checkout once you place your order.</p>
+              <Link className="button button-primary" to="/checkout">Proceed to checkout <span aria-hidden="true">→</span></Link>
+              <Link className="button button-secondary" to="/products">Continue shopping <span aria-hidden="true">→</span></Link>
             </aside>
           </div>
         )}

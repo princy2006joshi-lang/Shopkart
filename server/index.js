@@ -8,6 +8,7 @@ import customerRoutes from './routes/customer.routes.js'
 import productRoutes from './routes/product.routes.js'
 import cartRoutes from './routes/cart.routes.js'
 import wishlistRoutes from './routes/wishlist.routes.js'
+import orderRoutes from './routes/order.routes.js'
 
 const app = express()
 const Port = 9001
@@ -23,14 +24,16 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(cors({
     origin: 'http://localhost:5173',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
 }))
 
 app.use('/customer', customerRoutes)
 app.use('/products', productRoutes)
 app.use('/cart', cartRoutes)
 app.use('/wishlist', wishlistRoutes)
+app.use('/orders', orderRoutes)
 
 app.get('/', (req, res)=>{
     res.send("Server is running")
